@@ -1,6 +1,21 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Hello, world!</h1>
+<p>Send a message to anybody in the world.</p>
+<p>As long as they're one of the four people who have access to this app.</p>
 
 <%= form_tag("/sms/send", method: "post") do %>
-<!-- add form elements here -->
+    <div>
+      <%= label_tag(:phone_number, "Send to:") %>
+      <div class="form-phone-number">
+        <%= text_field_tag(:phone_number) %>
+      </div>
+    </div>
+    <div>
+      <%= label_tag(:message, "Message:") %>
+      <div class="form-message">
+        <%= text_area_tag(:message, nil, size: "48x6") %>
+      </div>
+    </div>
+    <div class="form-submit">
+      <%= submit_tag("Send") %>
+    </div>
 <% end %>

@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+.form-phone-number {
+  margin-bottom: 15px;
+}
+
+.form-message {
+  margin-bottom: 15px;
+}
+
+.form-submit {
+  margin-top: 15px;
+}
