@@ -3,6 +3,5 @@ class PagesController < ApplicationController
   end
 
   def sms
-    byebug
   end
 end
